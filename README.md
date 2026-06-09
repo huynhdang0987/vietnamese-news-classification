@@ -343,9 +343,10 @@ Email:tranthanhphuoc@tdtu.edu.vn
 
 ## Team Members
 
-| Student ID | Full Name     | Email |
-| 522H0104   | Khoa Huynh    |522h0104@student.tdtu.edu.vn|
-| 522H0093   | Chau Bao Nhan |522h0093@student.tdtu.edu.vn|
+| Student ID | Full Name | Email |
+|------------|-----------|--------|
+| 522H0104 | Khoa Huynh | 522h0104@student.tdtu.edu.vn |
+| 522H0093 | Chau Bao Nhan | 522h0093@student.tdtu.edu.vn |
 
 ---
 
