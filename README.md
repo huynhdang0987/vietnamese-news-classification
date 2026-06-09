@@ -21,6 +21,9 @@ The main objectives of this project are:
 * Analyze classification performance using standard evaluation metrics.
 
 ---
+## Project Poster
+
+![Poster](poster.png)
 
 ## Dataset
 
