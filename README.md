@@ -172,6 +172,113 @@ Detailed experimental results, analysis, and discussions can be found in:
 * 522H0093_522H0104_Poster.pptx
 
 ---
+## Research Findings
+
+### RQ1 — Architecture Impact
+
+**Research Question:**
+To what extent does model architecture — spanning traditional machine learning, deep learning, and transformer-based approaches — affect classification performance across different news categories?
+
+**Findings:**
+The experimental results reveal that model architecture has a substantial impact on Vietnamese news classification performance. Contrary to common expectations, traditional machine learning and deep learning models consistently outperformed transformer-based approaches on the BN-VN3S dataset.
+
+#### Overall Classification Performance
+
+| Family         | Model               | Accuracy (%) | Precision (%) | Recall (%) | Macro-F1 (%) | AUC (%)   |
+| -------------- | ------------------- | ------------ | ------------- | ---------- | ------------ | --------- |
+| Traditional ML | Naïve Bayes         | 87.06        | 86.03         | 87.09      | 86.36        | 98.83     |
+| Traditional ML | Logistic Regression | 91.92        | 90.83         | 92.04      | 91.36        | 99.55     |
+| Traditional ML | LinearSVC           | 92.92        | 92.38         | 92.31      | 92.33        | 99.55     |
+| Traditional ML | SGDClassifier       | 87.73        | 86.55         | 87.68      | 87.03        | 98.95     |
+| Deep Learning  | TextCNN             | 91.91        | 91.32         | 91.23      | 91.27        | 99.41     |
+| Deep Learning  | **BiGRU**           | **93.01**    | **92.43**     | **92.47**  | **92.42**    | **99.61** |
+| Deep Learning  | TextRCNN            | 92.74        | 92.12         | 92.20      | 92.16        | 99.59     |
+| Transformer    | mBERT               | 79.84        | 78.10         | 80.30      | 78.73        | 97.04     |
+| Transformer    | XLM-R               | 82.65        | 80.80         | 82.78      | 81.60        | 97.94     |
+| Transformer    | PhoBERT             | 87.67        | 86.10         | 87.98      | 87.98        | 99.01     |
+
+#### Key Observations
+
+* **BiGRU achieved the best overall performance**, reaching an Accuracy of **93.01%** and a Macro-F1 score of **92.42%**.
+* **LinearSVC** was the strongest traditional machine learning model, achieving a Macro-F1 score of **92.33%**, only **0.09 points** behind BiGRU.
+* **TextRCNN** and **TextCNN** also demonstrated highly competitive performance, with Macro-F1 scores above **91%**.
+* Within the transformer family, **PhoBERT** achieved the best results, obtaining a Macro-F1 score of **87.98%**.
+* **mBERT** produced the weakest performance among all evaluated models, with a Macro-F1 score of only **78.73%**.
+* Traditional machine learning and deep learning models consistently outperformed transformer-based approaches across all evaluation metrics.
+
+**Conclusion:**
+The results demonstrate that architecture choice significantly affects Vietnamese news classification performance. On the BN-VN3S benchmark, deep learning models—particularly BiGRU—achieved the strongest overall performance, while transformer-based models were unable to match the effectiveness of the best traditional and deep learning approaches.
+
+---
+
+### RQ2 — Temporal Impact
+
+**Research Question:**
+Does the publication period of news articles introduce temporal distribution shifts that degrade model performance when training and testing data span different time intervals?
+
+**Findings:**
+[Summarize how model performance changes across different publication periods.]
+
+**Key Results:**
+
+* Most robust model: [Model Name]
+* Largest performance drop: [Model Name]
+* Average performance change: [Value]
+
+**Conclusion:**
+[State whether temporal distribution shift significantly affects classification performance and which models are most resilient.]
+
+---
+
+### RQ3 — Source Impact
+
+**Research Question:**
+Does the originating news publisher introduce source-specific stylistic or topical biases that systematically affect classification accuracy across publishers?
+
+**Findings:**
+[Summarize the impact of training and testing on different news sources.]
+
+**Key Results:**
+
+* Most robust model across publishers: [Model Name]
+* Largest source-specific degradation: [Model Name]
+* Performance difference across publishers: [Value]
+
+**Conclusion:**
+[State whether source-specific bias exists and how it influences model performance.]
+
+---
+
+### RQ4 — Data Scale Impact
+
+**Research Question:**
+How sensitive are different model families to the volume of available training data, and what minimum data requirements are needed for reliable classification performance?
+
+**Findings:**
+[Summarize how model performance changes as training data increases.]
+
+**Key Results:**
+
+* Best low-resource model: [Model Name]
+* Best high-resource model: [Model Name]
+* Data scale threshold: [Value]
+
+**Conclusion:**
+[State how different model families respond to increasing training data and identify practical data requirements.]
+
+---
+
+## Summary of Findings
+
+| Research Question | Main Finding |
+| ----------------- | ------------ |
+| RQ1               | [Summary]    |
+| RQ2               | [Summary]    |
+| RQ3               | [Summary]    |
+| RQ4               | [Summary]    |
+
+Overall, the study demonstrates that [Overall conclusion of the project].
+
 
 ## Future Work
 
