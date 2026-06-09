@@ -23,7 +23,7 @@ The main objectives of this project are:
 ---
 ## Project Poster
 
-![Poster](poster.png)
+![Poster](522H0093_522H0104_Poster.pptx)
 
 ## Dataset
 
